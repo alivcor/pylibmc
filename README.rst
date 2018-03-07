@@ -1,3 +1,7 @@
+This is NOT the official pylibmc repository
+===========================================
+
+
 `pylibmc` is a Python client for `memcached <http://memcached.org/>`_ written in C.
 
 See `the documentation at sendapatch.se/projects/pylibmc/`__ for more information.
