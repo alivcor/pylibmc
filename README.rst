@@ -1,6 +1,28 @@
 This is NOT the official pylibmc repository
 ===========================================
 
+Installation:
+
+1. Download libmemcached
+2. Download pylibmc-x.x.tar.gz
+3. tar -xzf pylibmc-x.x.tar.gz && cd pylibmc-x.x.tar.gz
+4. python setup.py install /path/to/libmemcached/lib
+5. While doing `import pylibmc` it throws an error on `import _pylibmc` - with this exception:
+
+
+    ImportError: libmemcached.so.11: cannot open shared object file: No such file or directory
+
+Solution:
+
+Do 
+    cp /path/to/libmemcached/lib/libmemcached.so.11 /home/<username>/anaconda3/lib
+    
+Restart Python Kernel.
+
+    
+Important Notes:
+1. If you run setup.py, and do not see gcc compiling in stdout, it probably means you've supplied a wrong PATH to libmemcached.
+2. If you run into issues, clean up mannually by deleting all pylibmc directories and eggs in /lib/python3.6/site-packages/
 
 `pylibmc` is a Python client for `memcached <http://memcached.org/>`_ written in C.
 
