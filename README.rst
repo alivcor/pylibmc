@@ -8,7 +8,7 @@ Installation:
 3. tar -xzf pylibmc-x.x.tar.gz && cd pylibmc-x.x.tar.gz
 4. python setup.py install /path/to/libmemcached/lib
 5. While doing `import pylibmc` it throws an error on `import _pylibmc` - with this exception:
-
+ 
 
     ImportError: libmemcached.so.11: cannot open shared object file: No such file or directory
 
