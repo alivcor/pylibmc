@@ -22,7 +22,7 @@ Restart Python Kernel.
     
 Important Notes:
 1. If you run setup.py, and do not see gcc compiling in stdout, it probably means you've supplied a wrong PATH to libmemcached.
-2. If you run into issues, clean up mannually by deleting all pylibmc directories and eggs in /lib/python3.6/site-packages/
+2. If you run into issues, clean up mannually by deleting all pylibmc directories and eggs in the directory /lib/python3.6/site-packages/
 
 `pylibmc` is a Python client for `memcached <http://memcached.org/>`_ written in C.
 
